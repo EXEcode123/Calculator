@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator_div">
+        <div id="main_div">
+        <form name="form1">
+            <div id="viewbar">
+                <div id="viewbar_display">
+                    <input id="input_value" type="text" name="answer" disabled placeholder="0">
+                </div>
+            </div>
+            <div id="top_div">
+                <input class="operator_button" type="button" value="+" onclick="form1.answer.value += '+'">
+                <input class="operator_button" type="button" value="-" onclick="form1.answer.value += '-'">
+                <input class="operator_button" id="multiplication" type="button" value="*" onclick="form1.answer.value += '*'">
+                <input class="operator_button" type="button" value="/" onclick="form1.answer.value += '/'">
+            </div>
+            <div id="middle_div">
+                <div id="number_div">
+                    <input class="number_button" type="button" value="1" onclick="form1.answer.value += '1'">
+                    <input class="number_button" type="button" value="2" onclick="form1.answer.value += '2'">
+                    <input class="number_button" type="button" value="3" onclick="form1.answer.value += '3'">
+                    <input class="number_button" type="button" value="4" onclick="form1.answer.value += '4'">
+                    <input class="number_button" type="button" value="5" onclick="form1.answer.value += '5'">
+                    <input class="number_button" type="button" value="6" onclick="form1.answer.value += '6'">
+                    <input class="number_button" type="button" value="7" onclick="form1.answer.value += '7'">
+                    <input class="number_button" type="button" value="8" onclick="form1.answer.value += '8'">
+                    <input class="number_button" type="button" value="9" onclick="form1.answer.value += '9'">
+                </div>
+                <div id="assign_button">
+                    <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)">
+                </div>
+            </div>
+            <div id="bottom_div">
+                <input class="bottom_button" type="button" value="0" onclick="form1.answer.value += '0'">
+                <input class="bottom_button" type="button" value="." onclick="form1.answer.value += '.'">
+                <input class="bottom_button" type="button" value="C" onclick="form1.answer.value = ''">
+            </div>
+        </form>
+        </div>
+        <div id="music_div">
+            <audio src="background_sound.mp3" controls autoplay loop></audio>
+        </div>
+    </div>
+</body>
+</html>

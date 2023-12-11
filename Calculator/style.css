@@ -1,0 +1,130 @@
+body{
+    display: flex;
+    justify-content: center;    /*horizontal/main-axis*/
+    align-items: center;       /*vertical/cross-axis*/
+    height: 100vh;
+    background-image: url(background_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#calculator_div{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#main_div{
+    display: flexbox;
+    background-color: rgb(255, 255, 255);
+    width: 267px;
+    height: 341px;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    align-items: start;
+    justify-content: space-around;
+}
+
+#viewbar{
+    background-color: lightblue;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#viewbar_display{
+    margin-right: 10px;
+}
+
+#input_value{
+    text-align: right;
+}
+
+#top_div{
+    display: flex;
+    width: 100%;
+    height: 61px;
+}
+
+.operator_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    background-color: grey;
+    font-size: 30px;
+}
+
+#multiplication{
+    padding-top: 15px;
+}
+
+#middle_div{
+    display: flex;
+    width: 100%;
+    height: 183px;
+}
+
+#number_div{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -2px;
+}
+
+.number_button{
+    height: 61px;
+    width: 33%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1mm ridge rgba(211, 220, 50, .6);
+}
+
+#assign_button{
+    width: 25%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+#assign_button input{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(249, 224, 132);
+}
+
+#bottom_div{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border-top: 2px solid black;
+}
+
+.bottom_button{
+    background-color: rgb(113, 129, 210);
+    height: 100%;
+    width: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: 2px ridge black;
+}
+
+#music_div{
+    height: 50px;
+    width: 200px;
+    margin-left: 100px;
+}
